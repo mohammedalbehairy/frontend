@@ -10,7 +10,7 @@ export class CountDownComponent implements OnInit {
   private subscription: any;
   
   public dateNow = new Date();
-  public dDay = new Date('June 19 2021 09:00:00');
+  public dDay = new Date('June 26 2021 09:00:00');
   milliSecondsInASecond = 1000;
   hoursInADay = 24;
   minutesInAnHour = 60;
