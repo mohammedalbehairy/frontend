@@ -1,0 +1,55 @@
+<section id="partners" class="hide-on-tablet-lg">
+  <div class="container">
+    <div class="partners">
+      <div class="title">
+        <h2>Our Trusted Partners</h2>
+      </div>
+      <div class="logos">
+        <img src="assets/images/partner_1.png" alt="">
+        <img src="assets/images/partner_2.png" alt="">
+        <img src="assets/images/partner_1.png" alt="">
+        <img src="assets/images/partner_2.png" alt="">
+        <img src="assets/images/partner_1.png" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="partners__m" class="tablet-lg-only">
+  <div class="partners__swiper">
+    <div class="header">
+      <h2>Our Trusted Partners…</h2>
+    </div>
+
+    <swiper [dir]="'ltr'" [spaceBetween]="32" [loop]="true" [pagination]="{  clickable: true }" [breakpoints]="{
+      '0': {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      '350': {
+        slidesPerView: 3,
+        spaceBetween: 20
+      },
+      '500': {
+        slidesPerView: 4,
+        spaceBetween: 32
+      },
+      '768': {
+        slidesPerView: 4,
+        spaceBetween: 50
+      },
+      '1024': {
+        slidesPerView: 5,
+        spaceBetween: 50
+      }
+    }">
+      <ng-template swiperSlide class="s_partner"><img src="assets/images/partner_1.png" alt=""></ng-template>
+      <ng-template swiperSlide class="s_partner"><img src="assets/images/partner_2.png" alt=""></ng-template>
+      <ng-template swiperSlide class="s_partner"><img src="assets/images/partner_1.png" alt=""></ng-template>
+      <ng-template swiperSlide class="s_partner"><img src="assets/images/partner_2.png" alt=""></ng-template>
+      <ng-template swiperSlide class="s_partner"><img src="assets/images/partner_1.png" alt=""></ng-template>
+    </swiper>
+
+  </div>
+</section>

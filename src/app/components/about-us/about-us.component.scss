@@ -1,0 +1,130 @@
+@import 'theme/mixins';
+
+
+#about {
+  overflow: hidden;
+  height: 365px;
+  width: 100%;
+
+  .about {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    .about-bg {
+      height: 100%;
+      width: 46.3%;
+
+      img {
+        width: 100%;
+        border-radius: 15px;
+        height: 100%;
+      }
+    }
+
+
+    .card {
+      position: relative;
+      width: 58.3333%;
+      height: 301px;
+
+      padding: 64px;
+      background-color: $white;
+      z-index: 999;
+      overflow: hidden;
+      box-sizing: border-box;
+      border-radius: 10px;
+
+
+      .story {
+        display: flex;
+        align-items: center;
+
+        hr {
+          border: none;
+          border-bottom: 0.5px solid #595959;
+          width: 32px;
+          margin: 0;
+        }
+
+        span {
+          font-family: Nunito Sans;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 22px;
+          margin: 0 8px;
+          letter-spacing: -0.426667px;
+
+          color: #595959;
+        }
+      }
+    }
+  }
+}
+
+@include tablet {
+  #about__m {
+    min-height: 434px;
+    width: 100%;
+
+    .about {
+      margin-bottom: 48px !important;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      height: 100%;
+
+      .about-bg {
+        margin: 0 0 16px 0;
+        width: 100%;
+
+        img {
+          width: 100%;
+          border-radius: 15px;
+          height: 100%;
+        }
+      }
+
+
+      .card {
+        width: 100%;
+        padding: 0 0 16px 0;
+        background-color: $white;
+        box-sizing: border-box;
+        border-radius: 10px;
+
+
+        .story {
+          display: flex;
+          align-items: center;
+
+          hr {
+            border: none;
+            border-bottom: 0.5px solid #595959;
+            width: 32px;
+            margin: 0;
+          }
+
+          span {
+            font-family: Nunito Sans;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 22px;
+            margin: 0 8px;
+            letter-spacing: -0.426667px;
+
+            color: #595959;
+          }
+        }
+      }
+    }
+  }
+}
+
+// @include mobile {
+//   #about {
+//     display: none;
+//   }
+// }

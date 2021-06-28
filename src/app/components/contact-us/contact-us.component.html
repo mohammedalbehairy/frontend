@@ -1,0 +1,53 @@
+<section id="contact">
+  <div class="container">
+    <div class="card">
+
+      <div class="inner__container">
+        <div class="story">
+          <hr><span>{{ 'contact.contacts' | translate }}</span>
+        </div>
+        <h2>Get in touch with us.</h2>
+        <div class="our__contacts">
+          <div class="info"><i class="fas fa-phone-alt"></i><span>0100-55-55-555</span></div>
+          <div class="info"><i class="fas fa-map-marker-alt"></i><span>9 St abdelmonaem, Alexandira - Egypt.</span>
+          </div>
+          <div class="info"><i class="fas fa-envelope"></i><span>info@united-housing.com</span></div>
+        </div>
+        <div class="form">
+          <form [formGroup]="contactForm" (ngSubmit)="submitForm">
+            <input formControlName="name" type="text" id="name" name="name"
+              placeholder="{{ 'contact.form.placeholder.name' | translate }}">
+            <span class="text-danger"
+              *ngIf="(contactFormControl.name.touched || submitted) && contactFormControl.name.errors?.required">
+              {{ 'contact.form.error.nameRequired' | translate }}
+            </span>
+            <input formControlName="email" type="text" id="email" name="email"
+              placeholder="{{ 'contact.form.placeholder.email' | translate }}">
+            <span class="text-danger"
+              *ngIf="(contactFormControl.email.touched || submitted) && contactFormControl.email.errors?.required">
+              {{ 'contact.form.error.emailRequired' | translate }}
+            </span>
+            <span class="text-danger"
+              *ngIf="(contactFormControl.email.touched || submitted) && contactFormControl.email.errors?.email">
+              {{ 'contact.form.error.emailNotValid' | translate }}
+            </span>
+            <input formControlName="phone" type="text" id="phone" name="phone" type="number"
+              placeholder="{{ 'contact.form.placeholder.phone' | translate }}">
+            <span class="text-danger"
+              *ngIf="(contactFormControl.phone.touched || submitted) && contactFormControl.phone.errors?.required">
+              {{ 'contact.form.error.phoneRequired' | translate }}
+            </span>
+            <textarea formControlName="subject" id="subject" name="subject"
+              placeholder="{{ 'contact.form.placeholder.subject' | translate }}"></textarea>
+
+            <input type="submit" class="submit" value="{{ 'contact.form.placeholder.submit' | translate }}" (click)="submitForm()">
+          </form>
+        </div>
+      </div>
+
+    </div>
+    <div class="map">
+
+    </div>
+  </div>
+</section>

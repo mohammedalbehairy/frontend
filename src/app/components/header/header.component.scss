@@ -1,0 +1,133 @@
+@import 'theme/mixins';
+
+
+#nav {
+  // overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+
+
+
+
+  ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin: 32px 0;
+    padding: 0;
+
+    li {
+      padding: 7px 12px;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &:last-child {
+        padding-right: 24px;
+      }
+
+      a {
+        text-decoration: none;
+
+        font-family: Nunito Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: -0.426667px;
+        color: #595959;
+      }
+    }
+  }
+
+  .actions {
+    display: flex;
+    align-items: center;
+
+    a {
+      display: flex;
+      align-items: center;
+      border-radius: 15px;
+      background-color: #134C5B;
+      padding: 8px 16px;
+      color: $white;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 19px;
+      letter-spacing: -0.373333px;
+      text-decoration: none;
+
+      i {
+        margin: 4px;
+        font-size: 16px;
+      }
+    }
+
+    span {
+      margin: 0 15.5px;
+    }
+
+    .dropbtn {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+.ar {
+  margin-left: 72px;
+}
+
+.en {
+  margin-right: 72px;
+}
+
+.dropbtn {
+  background-color: white;
+  color: #595959;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+
+  i {
+    &:first-child {
+      margin: 4px;
+      font-size: 24px;
+    }
+  }
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 80px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  margin: 5px 0;
+  border-radius: 0 !important;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+

@@ -8,3 +8,15 @@
 @mixin tablet {
   @media (max-width: $breakpointMd) { @content; }
 }
+
+@mixin tabletLg {
+  @media (max-width: $breakpointTabletLg) { @content; }
+}
+
+@mixin large {
+  @media (max-width: $breakpointLg) { @content; }
+}
+
+@mixin xlarge {
+  @media (max-width: $breakpointXl) { @content; }
+}

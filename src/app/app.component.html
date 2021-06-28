@@ -1,12 +1,186 @@
-<div class="body">
+<section id="header" class="hide-on-tablet-lg">
+  <div class="part1">
+    <app-header></app-header>
+    <div class="cards">
+      <div class="about1">
+        <div class="info">
+          <span>new</span>
+          <p>Our selection of fresh bread.
+          </p>
+        </div>
+      </div>
+      <div class="about2">
+        <div class="info">
+          <span>check out</span>
+          <p>Our selected cheddar.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="part2">
+    <div class="layer">
 
-  <div class="logo">
-    <img src="assets/images/logo.png" alt="">
+      <div class="logoEN" [ngClass]="{'logoEN': lang === 'en', 'logoAR' : lang === 'ar' }">
+        <img src="../assets/images/primelogo.svg" alt="">
+      </div>
+
+      <div class="infoEN" *ngIf="lang == 'en'">
+        <div class="story">
+          <hr><span>The next level of shopping </span>
+        </div>
+        <p>
+          Introducing a Whole New Experience, the one location to find your every need.
+        </p>
+      </div>
+      <div class="infoAR" *ngIf="lang == 'ar'">
+        <div class="story">
+          <hr><span>The next level of shopping </span>
+        </div>
+        <p>
+          Introducing a Whole New Experience, the one location to find your every need.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="header__m" class="tablet-lg-only">
+  <div id="mySidepanel" class="sidepanel" [ngClass]="{'sidepanelEN': lang === 'en', 'sidepanelAR' : lang === 'ar' }">
+
+    <div class="wrapper">
+      <div class="links">
+        <a class="closebtn" (click)="closeNav()">×</a>
+        <li><a (click)="scrollToElement('about__m')">About us</a></li>
+        <li><a (click)="scrollToElement('categories__m')">Categories</a></li>
+        <li><a (click)="scrollToElement('partners__m')">Partners</a></li>
+      </div>
+      <div class="actions">
+        <a (click)="scrollToElement('contact')"><i class="fas fa-envelope-square"></i>Contact Us</a>
+        <div class="dropup">
+          <span class="dropbtn">
+            <i class="fas fa-globe"></i>
+            <i class="fas fa-chevron-down"></i>
+          </span>
+          <div class="dropup-content">
+            <a (click)="setLanguage('ar')">عربى</a>
+            <a (click)="setLanguage('en')">English</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <h1>THE WAIT IS ALMOST OVER</h1>
+  <div class="part1">
+    <div class="layer">
 
-  <app-count-down> </app-count-down>
-</div>
+      <div class="logoEN" [ngClass]="{'logoEN': lang === 'en', 'logoAR' : lang === 'ar' }">
+        <div class="logo">
+          <img src="../assets/images/primelogo.svg" alt="">
+        </div>
+        <div class="col__btn">
+          <i class="fas fa-bars" (click)="openNav()"></i>
+        </div>
+
+      </div>
+
+      <div class="infoEN" *ngIf="lang == 'en'">
+        <div class="story">
+          <hr><span>The next level of shopping </span>
+        </div>
+        <p>
+          Introducing a Whole New Experience, the one location to find your every need.
+        </p>
+      </div>
+      <div class="infoAR" *ngIf="lang == 'ar'">
+        <div class="story">
+          <hr><span>The next level of shopping </span>
+        </div>
+        <p>
+          Introducing a Whole New Experience, the one location to find your every need.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="part2">
+
+    <ng-template [ngIf]="lang == 'en'" [ngIfElse]="ar">
+      <swiper dir="ltr" [slidesPerView]="'auto'" [loop]="true" class="mySwiper" [breakpoints]="{
+        '0': {
+          slidesPerView: 2,
+          spaceBetween: 0
+        },
+        '1340': {
+          slidesPerView: 2,
+          spaceBetween: 0
+        }
+      }">
+        <ng-template swiperSlide>
+          <div class="about1">
+            <div class="info">
+              <span>new</span>
+              <p>Our selection of fresh bread.
+              </p>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="about1">
+            <div class="info">
+              <span>new</span>
+              <p>Our selection of fresh bread.
+              </p>
+            </div>
+          </div>
+        </ng-template>
+      </swiper>
+    </ng-template>
+
+    <ng-template #ar>
+      <swiper dir="rtl" [slidesPerView]="'auto'" [loop]="true" class="mySwiper" [breakpoints]="{
+      '0': {
+        slidesPerView: 2,
+        spaceBetween: 0
+      },
+      '1340': {
+        slidesPerView: 2,
+        spaceBetween: 0
+      }
+    }">
+        <ng-template swiperSlide>
+          <div class="about1">
+            <div class="info">
+              <span>new</span>
+              <p>Our selection of fresh bread.
+              </p>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="about1">
+            <div class="info">
+              <span>new</span>
+              <p>Our selection of fresh bread.
+              </p>
+            </div>
+          </div>
+        </ng-template>
+      </swiper>
+    </ng-template>
+  </div>
+</section>
+
+
+
+<app-categories></app-categories>
+
+<app-about-us></app-about-us>
+
+<app-partners></app-partners>
+
+<app-contact-us></app-contact-us>
+
+<app-footer></app-footer>
+
 
 <router-outlet></router-outlet>

@@ -1,0 +1,110 @@
+@import 'theme/mixins';
+
+#footer {
+  height: 365px;
+  width: 100%;
+  background: #134C5B;
+  height: 118px;
+  align-items: center;
+  display: flex;
+  margin-bottom: 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .social {
+      display: flex;
+      align-items: center;
+
+      .story {
+        display: flex;
+        align-items: center;
+        margin: 28px;
+
+        span {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 22px;
+          letter-spacing: -0.426667px;
+          color: #FFFFFF;
+          margin: 0 8px;
+        }
+
+        hr {
+          border: none;
+          border-bottom: 0.5px solid $white;
+          width: 32px;
+          margin: 0;
+        }
+      }
+
+      i {
+        font-size: 17px;
+        color: $white;
+      }
+
+      .fa__social {
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .dot {
+        margin: 28px;
+
+        i {
+          font-size: 6px;
+          color: rgba(255, 255, 255, 0.3);
+        }
+      }
+    }
+
+    .copy__rights {
+      font-size: 14px;
+      line-height: 19px;
+      letter-spacing: -0.373333px;
+      color: #FFFFFF;
+    }
+
+
+  }
+}
+
+@include tablet {
+  #footer {
+    height: auto;
+
+    .container {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      margin: 0 !important;
+      width: 100%;
+
+      .copy__rights {
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: -0.373333px;
+        color: #595959;
+        background-color: $white;
+        width: 100%;
+        padding: 16px 24px;
+        box-sizing: border-box;
+      }
+    }
+  }
+}
+
+// @include mobile {
+//   flex-direction: column-reverse;
+//   height: 137px;
+//   align-items: flex-start;
+
+//   .copy__rights {
+//     font-size: 14px;
+//     line-height: 19px;
+//     letter-spacing: -0.373333px;
+//     color: #595959;
+//   }
+// }
