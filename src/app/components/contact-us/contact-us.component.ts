@@ -30,11 +30,10 @@ export class ContactUsComponent implements OnInit {
   }
 
   submitForm() {
-    this.submitted = true;
-    if (this.contactForm.valid) {
-      this.submitted = false;
-      this.callHttp();
 
+    if (this.contactForm.valid) {
+      this.submitted = true;
+      this.callHttp();
     }
   }
 
@@ -42,10 +41,10 @@ export class ContactUsComponent implements OnInit {
     this.contactService.create(this.contactForm.value).subscribe(
       (res) => {
         this.contactForm.reset();
-        console.log(res);
+        this.submitted = false;
       },
       (err) => {
-        console.log(err);
+        this.submitted = false;
       }
     );
   }

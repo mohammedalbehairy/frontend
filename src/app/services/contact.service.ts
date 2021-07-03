@@ -10,6 +10,6 @@ export class ContactService {
   constructor(private http: HttpClient) { }
 
   create(body: Contact) {
-    return this.http.post('http://localhost:8055/items/contacts', body);
+    return this.http.post('https://admin.primemart.co/items/contacts', body);
   }
 }
