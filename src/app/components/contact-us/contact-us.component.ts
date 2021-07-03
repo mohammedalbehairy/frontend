@@ -30,11 +30,13 @@ export class ContactUsComponent implements OnInit {
   }
 
   submitForm() {
-
-    if (this.contactForm.valid) {
-      this.submitted = true;
-      this.callHttp();
+    this.submitted = true;
+    if (this.contactForm.invalid) {
+      this.contactForm.markAllAsTouched();
+      this.submitted = false;
+      return;
     }
+    this.callHttp();
   }
 
   callHttp() {

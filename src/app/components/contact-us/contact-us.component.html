@@ -40,7 +40,7 @@
             <textarea formControlName="subject" id="subject" name="subject"
               placeholder="{{ 'contact.form.placeholder.subject' | translate }}"></textarea>
 
-            <input type="submit" class="submit" [disabled]="submitted"
+            <input type="submit" class="submit" [disabled]="submitted == true"
               value="{{ 'contact.form.placeholder.submit' | translate }}" (click)="submitForm()">
           </form>
         </div>
