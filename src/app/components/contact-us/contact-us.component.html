@@ -1,6 +1,6 @@
 <section id="contact">
   <div class="container">
-    <div class="card">
+    <div class="card" [ngClass]="{'border__card__en': lang === 'en', 'border__card__ar' : lang === 'ar' }">
 
       <div class="inner__container">
         <div class="story">
@@ -47,7 +47,7 @@
       </div>
 
     </div>
-    <div class="map">
+    <div class="map" [ngClass]="{'border__map__en': lang === 'en', 'border__map__ar' : lang === 'ar' }">
 
     </div>
   </div>

@@ -21,7 +21,7 @@
       //TODO: remove after putting real map
       background-image: url(../../../assets/images/map.png);
       background-size: cover;
-      border-radius: 10px 0 0 10px;
+      // border-radius: 10px 0 0 10px;
     }
 
     .card {
@@ -34,7 +34,7 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      border-radius: 10px 10px 10px 0;
+      // border-radius: 10px 10px 10px 0;
 
       .inner__container {
         width: 100%;
@@ -155,6 +155,22 @@
 
       }
     }
+
+    .border__card__ar {
+      border-radius: 10px 10px 10px 0  !important;
+    }
+
+    .border__card__en {
+      border-radius: 10px 10px 0 10px !important;
+    }
+
+    .border__map__ar {
+      border-radius: 10px 0 0 10px !important;
+    }
+
+    .border__map__en {
+      border-radius: 0 10px 10px 0 !important;
+    }
   }
 }
 
@@ -168,9 +184,11 @@
       flex-direction: column;
       margin: 0 !important;
       width: 100%;
+
       .card {
         width: 100%;
-        .inner__container{
+
+        .inner__container {
           padding-top: 0;
           padding-bottom: 0;
         }
@@ -194,10 +212,12 @@
       flex-direction: column;
       margin: 0 !important;
       width: 100%;
+
       .card {
         width: 100%;
         margin-top: 0;
-        .inner__container{
+
+        .inner__container {
           padding-top: 0;
           padding-bottom: 0;
         }

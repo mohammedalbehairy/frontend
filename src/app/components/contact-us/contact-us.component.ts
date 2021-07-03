@@ -16,6 +16,11 @@ export class ContactUsComponent implements OnInit {
     private contactService: ContactService
   ) {}
 
+  get lang() {
+    let lang = localStorage.getItem('language') || 'en';
+    return lang;
+  }
+
   ngOnInit(): void {
     this.initForm();
   }
