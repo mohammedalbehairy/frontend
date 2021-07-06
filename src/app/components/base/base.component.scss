@@ -1,0 +1,557 @@
+@import 'theme/mixins';
+
+
+#header {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 725px;
+  overflow: hidden;
+
+  .part1 {
+
+    flex-basis: 41.25%;
+    display: flex;
+    flex-direction: column;
+
+    .cards {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+
+      .about1 {
+        flex: 1;
+        background-image: url(../../../assets/images/cro.png);
+        background-size: cover;
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+
+        .info {
+          position: absolute;
+          margin: 31px 41px;
+
+          span {
+            padding: 6px 10px;
+            border-radius: 15px;
+            background-color: #134C5B;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: -0.32px;
+
+            color: $white;
+          }
+
+          p {
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 33px;
+            letter-spacing: -0.64px;
+            color: $white;
+            margin: 8px 0 0 0;
+          }
+        }
+      }
+
+      .about2 {
+        flex: 1;
+        background-image: url(../../../assets/images/cheed.png);
+        background-size: cover;
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+
+        .info {
+          position: absolute;
+          margin: 31px 41px;
+
+          span {
+            border-radius: 15px;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: -0.32px;
+            color: $white;
+          }
+
+          p {
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 33px;
+            letter-spacing: -0.64px;
+            color: $white;
+            margin: 8px 0 0 0;
+
+            // border: 1px solid #000000;
+            // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            color: black;
+            -webkit-text-fill-color: white;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
+
+          }
+        }
+      }
+    }
+  }
+
+  .part2 {
+    flex-basis: 58.75%;
+    background-image: url(../../../assets/images/pg.png);
+    background-size: cover;
+    position: relative;
+
+    .layer {
+      background-color: rgba(0, 99, 112, .9);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      .logoEN {
+        position: absolute;
+        top: 32px;
+        left: 65px;
+
+        img {
+          width: 175px;
+          height: 61px;
+          // background: $white;
+        }
+      }
+
+      .logoAR {
+        position: absolute;
+        top: 32px;
+        right: 65px;
+
+        img {
+          width: 175px;
+          height: 61px;
+        }
+      }
+
+      .infoEN {
+        // width: 489px; //TODO:becuase it make text take another line
+        width: 510px;
+        height: 114px;
+        margin-left: 65px;
+        margin-top: 304px;
+
+        .story {
+          display: flex;
+          align-items: center;
+
+          hr {
+            border: none;
+            border-bottom: 0.5px solid $white;
+            width: 32px;
+            margin: 0;
+          }
+
+          span {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 22px;
+            letter-spacing: -0.426667px;
+            color: $white;
+            margin: 0 8px;
+          }
+        }
+
+        p {
+          font-weight: bold;
+          font-size: 28px;
+          line-height: 38px;
+          letter-spacing: -0.746667px;
+          color: $white;
+          margin: 0;
+        }
+      }
+
+      .infoAR {
+        // width: 489px; //TODO:becuase it make text take another line
+        width: 510px;
+        height: 114px;
+        margin-right: 65px;
+        margin-top: 304px;
+
+        .story {
+          display: flex;
+          align-items: center;
+
+          hr {
+            border: none;
+            border-bottom: 0.5px solid $white;
+            width: 32px;
+            margin: 0;
+          }
+
+          span {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 22px;
+            letter-spacing: -0.426667px;
+            color: $white;
+            margin: 0 8px;
+          }
+        }
+
+        p {
+          font-weight: bold;
+          font-size: 28px;
+          line-height: 38px;
+          letter-spacing: -0.746667px;
+          color: $white;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@include tabletLg {
+  #header__m {
+
+
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    overflow: hidden;
+
+    .part1 {
+      height: 350px;
+      background-image: url(../../../assets/images/pg.png);
+      background-size: cover;
+      position: relative;
+
+      .layer {
+        background-color: rgba(0, 99, 112, .9);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        .logoEN {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          align-items: center;
+          padding: 22px 24px;
+          box-sizing: border-box;
+          position: absolute;
+
+          .logo {
+            img {
+              width: 100px;
+              height: 35px;
+            }
+          }
+
+          .col__btn {
+            i {
+              font-size: 22px;
+              color: $white;
+            }
+          }
+
+        }
+
+        .logoAR {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          align-items: center;
+          padding: 22px 24px;
+          box-sizing: border-box;
+          position: absolute;
+
+          .logo {
+            img {
+              width: 100px;
+              height: 35px;
+            }
+          }
+
+          .col__btn {
+            i {
+              font-size: 22px;
+              color: $white;
+            }
+          }
+        }
+
+        .infoEN {
+          width: 315px;
+          height: 83px;
+          margin-left: 24px;
+          margin-top: 134px;
+
+          .story {
+            display: flex;
+            align-items: center;
+
+            hr {
+              border: none;
+              border-bottom: 0.5px solid $white;
+              width: 32px;
+              margin: 0;
+            }
+
+            span {
+              font-weight: normal;
+              font-size: 14px;
+              line-height: 19px;
+              letter-spacing: -0.373333px;
+              color: $white;
+              margin: 0 8px;
+            }
+          }
+
+          p {
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 25px;
+            letter-spacing: -0.48px;
+            color: $white;
+            margin: 0;
+          }
+        }
+
+        //TODO:merge both of them : there is only  margin-right: 24px; is different
+        .infoAR {
+          width: 315px;
+          height: 83px;
+          margin-right: 24px;
+          margin-top: 134px;
+
+          .story {
+            display: flex;
+            align-items: center;
+
+            hr {
+              border: none;
+              border-bottom: 0.5px solid $white;
+              width: 32px;
+              margin: 0;
+            }
+
+            span {
+              font-weight: normal;
+              font-size: 14px;
+              line-height: 19px;
+              letter-spacing: -0.373333px;
+              color: $white;
+              margin: 0 8px;
+            }
+          }
+
+          p {
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 25px;
+            letter-spacing: -0.48px;
+            color: $white;
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    .part2 {
+      height: 150px;
+
+      .swiper-container {
+        width: 140%;
+        height: 100%;
+      }
+
+
+      .mySwiper {
+        margin: 0;
+      }
+
+      ::ng-deep {
+        .swiper-slide {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          // width: 325px;
+          width: 60%;
+          .about1 {
+            flex: 1;
+            background-image: url(../../../assets/images/cro.png);
+            background-size: cover;
+            position: relative;
+            display: flex;
+            flex-direction: column-reverse;
+            height: 100%;
+
+            .info {
+              position: absolute;
+              margin: 31px 41px;
+
+              span {
+                padding: 6px 10px;
+                border-radius: 15px;
+                background-color: #134C5B;
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 16px;
+                letter-spacing: -0.32px;
+
+                color: $white;
+              }
+
+              p {
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 22px;
+                letter-spacing: -0.426667px;
+                color: $white;
+                margin: 8px 0 0 0;
+              }
+            }
+          }
+
+        }
+
+      }
+
+
+    }
+
+
+    .sidepanel {
+      width: 0;
+      position: fixed;
+      z-index: 9999;
+      height: 100vh;
+      top: 0;
+      right: 0;
+      background-color: $white;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+      box-sizing: border-box;
+      box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.25);
+
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+
+        .links {
+          a {
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+            margin: 32px;
+          }
+
+          .closebtn {
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 36px;
+          }
+
+          li {
+            list-style: none;
+          }
+        }
+
+        .actions {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #134C5B;
+          color: white;
+          padding: 16px;
+          font-size: 16px;
+          padding: 24px 0;
+          text-align: center;
+
+          a {
+            flex: 1;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 19px;
+            letter-spacing: -0.373333px;
+            color: $white;
+
+            i {
+              margin: 4px;
+            }
+          }
+
+          .dropbtn {
+            i {
+              margin: 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+.dropbtn {
+  color: white;
+  font-size: 16px;
+  border: none;
+}
+
+.dropup {
+  position: relative;
+  display: inline-block;
+  flex: 1;
+}
+
+.dropup-content {
+  display: none;
+  position: absolute;
+  background-color: #134C5B;
+  min-width: 160px;
+  bottom: 50px;
+  z-index: 1;
+}
+
+.dropup-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+// .dropup-content a:hover {
+//   background-color: rgb(119, 65, 65)
+// }
+
+.dropup:hover .dropup-content {
+  display: block;
+}
+
+
+.sidepanelAR {
+  right: unset !important;
+  left: 0;
+
+  .wrapper {
+
+    .links {
+
+      .closebtn {
+        right: unset !important;
+        left: 0;
+      }
+    }
+  }
+}

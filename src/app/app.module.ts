@@ -21,6 +21,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { SwiperModule } from "swiper/angular";
 import { CookiesComponent } from './components/cookies/cookies.component';
+import { BaseComponent } from './components/base/base.component';
+import { TermsAndCondtionsComponent } from './components/terms-and-condtions/terms-and-condtions.component';
+import { CopyRightsComponent } from './components/copy-rights/copy-rights.component';
 
 /**
  * The http loader factory : Loads the files from define path.
@@ -43,6 +46,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     HeaderComponent,
     FooterComponent,
     CookiesComponent,
+    BaseComponent,
+    TermsAndCondtionsComponent,
+    CopyRightsComponent,
   ],
   imports: [
     BrowserModule,
