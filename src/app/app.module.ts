@@ -20,6 +20,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 // import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
 import { CommonModule } from '@angular/common';
 import { SwiperModule } from "swiper/angular";
+import { CookiesComponent } from './components/cookies/cookies.component';
 
 /**
  * The http loader factory : Loads the files from define path.
@@ -41,6 +42,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     ContactUsComponent,
     HeaderComponent,
     FooterComponent,
+    CookiesComponent,
   ],
   imports: [
     BrowserModule,
