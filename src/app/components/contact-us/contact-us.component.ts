@@ -59,4 +59,8 @@ export class ContactUsComponent implements OnInit {
   get contactFormControl() {
     return this.contactForm.controls;
   }
+
+  openMap(){
+    window.open('https://goo.gl/maps/rYnBXX6iEUyV2tmp6', "_blank");
+  }
 }
