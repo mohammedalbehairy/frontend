@@ -24,6 +24,7 @@ import { CookiesComponent } from './components/cookies/cookies.component';
 import { BaseComponent } from './components/base/base.component';
 import { TermsAndCondtionsComponent } from './components/terms-and-condtions/terms-and-condtions.component';
 import { CopyRightsComponent } from './components/copy-rights/copy-rights.component';
+import { VarietyProductsComponent } from './components/variety-products/variety-products.component';
 
 /**
  * The http loader factory : Loads the files from define path.
@@ -49,6 +50,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     BaseComponent,
     TermsAndCondtionsComponent,
     CopyRightsComponent,
+    VarietyProductsComponent,
   ],
   imports: [
     BrowserModule,

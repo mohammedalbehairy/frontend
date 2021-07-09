@@ -1,0 +1,111 @@
+@import 'theme/mixins';
+@import "~swiper/swiper";
+@import "~swiper/components/pagination/pagination";
+
+#variety__products {
+  overflow: hidden;
+  box-sizing: border-box;
+
+  .container {
+    .story {
+      display: flex;
+      align-items: center;
+
+      hr {
+        border: none;
+        border-bottom: 0.5px solid #595959;
+        width: 32px;
+        margin: 0;
+      }
+
+      span {
+        font-family: Nunito Sans;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+
+        letter-spacing: -0.426667px;
+        margin: 0 8px;
+        color: #595959;
+      }
+    }
+    h2 {
+      margin-bottom: 32px !important;
+    }
+  }
+
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .card {
+    height: 309px;
+    width: 309px;
+    border-radius: 8px;
+  }
+
+  .card_1 {
+    background-image: url(../../../assets/images/vp/1.png);
+  }
+
+  .card_2 {
+    background-image: url(../../../assets/images/vp/2.png);
+  }
+
+  .card_3 {
+    background-image: url(../../../assets/images/vp/3.png);
+  }
+
+  .card_4 {
+    background-image: url(../../../assets/images/vp/4.png);
+  }
+
+  .card_5 {
+    background-image: url(../../../assets/images/vp/1.png);
+  }
+
+  .card_6 {
+    background-image: url(../../../assets/images/vp/2.png);
+  }
+
+  .card_7 {
+    background-image: url(../../../assets/images/vp/3.png);
+  }
+
+  .card_8 {
+    background-image: url(../../../assets/images/vp/4.png);
+  }
+
+  .card_9 {
+    background-image: url(../../../assets/images/vp/1.png);
+  }
+}

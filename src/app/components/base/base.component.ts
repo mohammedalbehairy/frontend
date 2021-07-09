@@ -1,10 +1,11 @@
 import { LocalizationService } from './../../internationalization/localization.service';
 import { Component, OnInit } from '@angular/core';
 
-// import Swiper core and required modules
-import SwiperCore, { Pagination } from 'swiper/core';
+import SwiperCore, { Pagination, Navigation } from "swiper/core";
+
 // install Swiper modules
-SwiperCore.use([Pagination]);
+SwiperCore.use([Pagination, Navigation]);
+
 @Component({
   selector: 'app-base',
   templateUrl: './base.component.html',
