@@ -30,6 +30,7 @@
         color: #595959;
       }
     }
+
     h2 {
       margin-bottom: 32px !important;
     }
@@ -71,6 +72,7 @@
     height: 309px;
     width: 309px;
     border-radius: 8px;
+    background-size: cover;
   }
 
   .card_1 {
@@ -90,22 +92,34 @@
   }
 
   .card_5 {
-    background-image: url(../../../assets/images/vp/1.png);
+    background-image: url(../../../assets/images/vp/5.png);
   }
 
   .card_6 {
-    background-image: url(../../../assets/images/vp/2.png);
+    background-image: url(../../../assets/images/vp/6.png);
   }
 
   .card_7 {
-    background-image: url(../../../assets/images/vp/3.png);
+    background-image: url(../../../assets/images/vp/7.png);
   }
 
   .card_8 {
-    background-image: url(../../../assets/images/vp/4.png);
+    background-image: url(../../../assets/images/vp/8.png);
   }
 
   .card_9 {
-    background-image: url(../../../assets/images/vp/1.png);
+    background-image: url(../../../assets/images/vp/9.png);
+  }
+
+  .card_10 {
+    background-image: url(../../../assets/images/vp/10.png);
+  }
+
+  .card_11 {
+    background-image: url(../../../assets/images/vp/11.png);
+  }
+
+  .card_12 {
+    background-image: url(../../../assets/images/vp/12.png);
   }
 }
