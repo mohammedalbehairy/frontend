@@ -81,9 +81,6 @@
             letter-spacing: -0.64px;
             color: $white;
             margin: 8px 0 0 0;
-
-            // border: 1px solid #000000;
-            // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             color: black;
             -webkit-text-fill-color: white;
             -webkit-text-stroke-width: 1px;
@@ -380,6 +377,7 @@
           align-items: center;
           // width: 325px;
           width: 60%;
+
           .about1 {
             flex: 1;
             background-image: url(../../../assets/images/cro.png);
@@ -416,6 +414,43 @@
             }
           }
 
+          .about2 {
+            flex: 1;
+            background-image: url(../../../assets/images/cheed.png);
+            background-size: cover;
+            position: relative;
+            display: flex;
+            flex-direction: column-reverse;
+            height: 100%;
+
+            .info {
+              position: absolute;
+              margin: 31px 41px;
+
+              span {
+                border-radius: 15px;
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 16px;
+                letter-spacing: -0.32px;
+                color: $white;
+              }
+
+              p {
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 22px;
+                letter-spacing: -0.426667px;
+                color: $white;
+                margin: 8px 0 0 0;
+                // color: black;
+                // -webkit-text-fill-color: white;
+                // -webkit-text-stroke-width: 1px;
+                // -webkit-text-stroke-color: black;
+
+              }
+            }
+          }
         }
 
       }
