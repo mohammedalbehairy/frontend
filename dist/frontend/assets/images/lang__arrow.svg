@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="8px" viewBox="0 0 8 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>arrow_back_ios_new-24px</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-1360.000000, -46.000000)">
+            <g id="Group-4" transform="translate(918.000000, 32.000000)">
+                <g id="Group-34" transform="translate(414.000000, 6.000000)">
+                    <g id="arrow_back_ios_new-24px" transform="translate(32.000000, 12.000000) rotate(-90.000000) translate(-32.000000, -12.000000) translate(28.000000, 8.000000)">
+                        <rect id="Rectangle" x="0" y="0" width="8" height="8"></rect>
+                        <polygon id="Path" stroke="#595959" stroke-width="0.5" fill="#595959" fill-rule="nonzero" points="5.92333333 1.25666667 5.33333333 0.666666667 2 4 5.33333333 7.33333333 5.92333333 6.74333333 3.18 4"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
