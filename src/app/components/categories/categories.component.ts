@@ -23,7 +23,7 @@ export class CategoriesComponent implements OnInit {
     'Biscuits',
     'Cakes, Cupcake and Muffins',
     'Croissants and Pastries',
-    'Crackers, Bread Sticks and Crispbread',
+    'Crackers, Bread Sticks',
     'Donuts, Cookies and Muffins',
     'Food To Go',
   ];
