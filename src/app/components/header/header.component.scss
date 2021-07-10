@@ -91,8 +91,9 @@
   font-size: 16px;
   border: none;
   cursor: pointer;
+  display: flex;
 
-  i {
+  img {
     &:first-child {
       margin: 4px;
       font-size: 24px;
@@ -129,5 +130,3 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
-

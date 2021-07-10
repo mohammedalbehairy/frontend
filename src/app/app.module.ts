@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CountDownComponent } from './count-down/count-down.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { CategoriesComponent } from './components/categories/categories.component';
 import { PartnersComponent } from './components/partners/partners.component';
@@ -39,7 +38,6 @@ export function HttpLoaderFactory(http: HttpClient) {
 @NgModule({
   declarations: [
     AppComponent,
-    CountDownComponent,
     AboutUsComponent,
     CategoriesComponent,
     PartnersComponent,

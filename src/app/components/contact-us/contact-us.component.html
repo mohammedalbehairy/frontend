@@ -9,10 +9,13 @@
         <h2>Get in touch with us.</h2>
         <div class="our__contacts">
           <!-- <div class="info"><i class="fas fa-phone-alt"></i><span>0100-55-55-555</span></div> -->
-          <div class="info"><i class="fas fa-map-marker-alt"></i><span>Abd El Salam Aref, Midan Al Sa'a, Mansoura,
+          <div class="info">
+            <!-- <span class="icon icon__mark"> </span> -->
+            <img src="../../../assets/images/mark.svg" alt="">
+            <span>Abd El Salam Aref, Midan Al Sa'a, Mansoura,
               Dakahlia, Egypt.</span>
           </div>
-          <div class="info"><i class="fas fa-envelope"></i><span>info@primemart.co</span></div>
+          <div class="info"> <img src="../../../assets/images/mail.svg" alt=""><span>info@primemart.co</span></div>
         </div>
         <div class="form">
           <form [formGroup]="contactForm" (ngSubmit)="submitForm">
@@ -48,7 +51,8 @@
       </div>
 
     </div>
-    <div class="map" [ngClass]="{'border__map__en': lang === 'en', 'border__map__ar' : lang === 'ar' }" (click)="openMap()">
+    <div class="map" [ngClass]="{'border__map__en': lang === 'en', 'border__map__ar' : lang === 'ar' }"
+      (click)="openMap()">
 
     </div>
   </div>
