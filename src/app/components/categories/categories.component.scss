@@ -6,44 +6,48 @@
   overflow: hidden;
 
   .container {
-    height: 375px;
+    // height: 375px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-top: 0;
     margin-bottom: 0;
 
-    .story {
-      display: flex;
-      align-items: center;
+    .header {
+      margin: 0 24px 23px 24px;
 
-      hr {
-        border: none;
-        border-bottom: 0.5px solid #595959;
-        width: 32px;
-        margin: 0;
+      .story {
+        display: flex;
+        align-items: center;
+
+        hr {
+          border: none;
+          border-bottom: 0.5px solid #595959;
+          width: 32px;
+          margin: 0;
+        }
+
+        span {
+          font-family: Nunito Sans;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 22px;
+
+          letter-spacing: -0.426667px;
+          margin: 0 8px;
+          color: #595959;
+        }
       }
 
-      span {
-        font-family: Nunito Sans;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 22px;
-
-        letter-spacing: -0.426667px;
-        margin: 0 8px;
+      h2 {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: -0.48px;
         color: #595959;
+        margin: 12px 0 0 0;
       }
-    }
-
-    h2 {
-      font-weight: bold;
-      font-size: 18px;
-      line-height: 25px;
-      letter-spacing: -0.48px;
-      color: #595959;
-      margin: 12px 0 0 0;
     }
 
     .cards {
@@ -51,7 +55,7 @@
       justify-content: space-between;
 
       .card {
-        height: 266px;
+        height: 313px;
         width: 232px;
 
         border-radius: 25px;
@@ -75,16 +79,39 @@
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          height: 140px;
+          height: 173px;
           color: $white;
+          text-align: center;
 
           h4 {
             font-weight: bold;
-            font-size: 24px;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: -0.426667px;
           }
 
           p {
-            font-size: 16px;
+            font-family: Lato;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: -0.32px;
+
+            color: rgba($white, .5);
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+
+          .arrow {
+            i {
+              font-size: 20px;
+            }
+
+            &:hover {
+              cursor: pointer;
+            }
           }
         }
       }
@@ -208,7 +235,7 @@
         }
 
         .card {
-          height: 266px;
+          height: 313px;
           width: 232px;
 
           border-radius: 25px;
@@ -232,16 +259,39 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 140px;
+            height: 173px;
             color: $white;
+            text-align: center;
 
             h4 {
               font-weight: bold;
-              font-size: 24px;
+              font-size: 16px;
+              line-height: 19px;
+              letter-spacing: -0.426667px;
             }
 
             p {
-              font-size: 16px;
+              font-family: Lato;
+              font-weight: normal;
+              font-size: 12px;
+              line-height: 14px;
+              letter-spacing: -0.32px;
+
+              color: rgba($white, .5);
+
+              &:hover {
+                cursor: pointer;
+              }
+            }
+
+            .arrow {
+              i {
+                font-size: 20px;
+              }
+
+              &:hover {
+                cursor: pointer;
+              }
             }
           }
         }

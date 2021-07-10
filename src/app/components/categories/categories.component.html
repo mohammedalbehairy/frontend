@@ -13,8 +13,15 @@
 
         </div>
         <div class="desc">
-          <h4>Fresh</h4>
-          <p>Healthy Vegetables</p>
+          <div class="arrow" (click)="incrementFarms()">
+            <span><i class="fas fa-chevron-down"></i></span>
+          </div>
+          <p (click)="incrementFarms()">{{arrFarms[prevIndexFarms]}}</p>
+          <h4>{{arrFarms[arrFarmsActive]}}</h4>
+          <p (click)="decrementFarms()">{{arrFarms[nextIndexFarms]}}</p>
+          <div class="arrow" (click)="decrementFarms()">
+            <span><i class="fas fa-chevron-up"></i></span>
+          </div>
         </div>
       </div>
       <div class="card card_2">
@@ -22,8 +29,15 @@
 
         </div>
         <div class="desc">
-          <h4>Baked</h4>
-          <p>Fresh Daily</p>
+          <div class="arrow" (click)="incrementDelights()">
+            <span><i class="fas fa-chevron-down"></i></span>
+          </div>
+          <p (click)="incrementDelights()">{{arrDelights[prevIndexDelights]}}</p>
+          <h4>{{arrDelights[arrDelightsActive]}}</h4>
+          <p (click)="decrementDelights()">{{arrDelights[nextIndexDelights]}}</p>
+          <div class="arrow" (click)="decrementDelights()">
+            <span><i class="fas fa-chevron-up"></i></span>
+          </div>
         </div>
       </div>
       <div class="card card_3">
@@ -31,8 +45,15 @@
 
         </div>
         <div class="desc">
-          <h4>Premium</h4>
-          <p>Quality Meat</p>
+          <div class="arrow" (click)="incrementButchers()">
+            <span><i class="fas fa-chevron-down"></i></span>
+          </div>
+          <p (click)="incrementButchers()">{{arrButchers[prevIndexButchers]}}</p>
+          <h4>{{arrButchers[arrButchersActive]}}</h4>
+          <p (click)="decrementButchers()">{{arrButchers[nextIndexButchers]}}</p>
+          <div class="arrow" (click)="decrementButchers()">
+            <span><i class="fas fa-chevron-up"></i></span>
+          </div>
         </div>
       </div>
       <div class="card card_4">
@@ -40,8 +61,15 @@
 
         </div>
         <div class="desc">
-          <h4>Daily</h4>
-          <p>Fresh Seafood</p>
+          <div class="arrow" (click)="incrementSeaFood()">
+            <span><i class="fas fa-chevron-down"></i></span>
+          </div>
+          <p (click)="incrementSeaFood()">{{arrSeaFood[nextIndexSeaFood]}}</p>
+          <h4>{{arrSeaFood[arrSeaFoodActive]}}</h4>
+          <p (click)="decrementSeaFood()">{{arrSeaFood[nextIndexSeaFood]}}</p>
+          <div class="arrow" (click)="decrementSeaFood()">
+            <span><i class="fas fa-chevron-up"></i></span>
+          </div>
         </div>
       </div>
       <div class="card card_5">
@@ -49,8 +77,15 @@
 
         </div>
         <div class="desc">
-          <h4>All-Natural</h4>
-          <p>Fresh Cheese</p>
+          <div class="arrow" (click)="incrementGrater()">
+            <span><i class="fas fa-chevron-down"></i></span>
+          </div>
+          <p (click)="incrementGrater()">{{arrGrater[prevIndexGrater]}}</p>
+          <h4>{{arrGrater[arrGraterActive]}}</h4>
+          <p (click)="decrementGrater()">{{arrGrater[nextIndexGrater]}}</p>
+          <div class="arrow" (click)="decrementGrater()">
+            <span><i class="fas fa-chevron-up"></i></span>
+          </div>
         </div>
       </div>
     </div>
@@ -73,8 +108,15 @@
 
           </div>
           <div class="desc">
-            <h4>Fresh</h4>
-            <p>Healthy Vegetables</p>
+            <div class="arrow" (click)="incrementFarms()">
+              <span><i class="fas fa-chevron-down"></i></span>
+            </div>
+            <p (click)="incrementFarms()">{{arrFarms[prevIndexFarms]}}</p>
+            <h4>{{arrFarms[arrFarmsActive]}}</h4>
+            <p (click)="decrementFarms()">{{arrFarms[nextIndexFarms]}}</p>
+            <div class="arrow" (click)="decrementFarms()">
+              <span><i class="fas fa-chevron-up"></i></span>
+            </div>
           </div>
         </div>
       </ng-template>
@@ -84,8 +126,15 @@
 
           </div>
           <div class="desc">
-            <h4>Baked</h4>
-            <p>Fresh Daily</p>
+            <div class="arrow" (click)="incrementDelights()">
+              <span><i class="fas fa-chevron-down"></i></span>
+            </div>
+            <p (click)="incrementDelights()">{{arrDelights[prevIndexDelights]}}</p>
+            <h4>{{arrDelights[arrDelightsActive]}}</h4>
+            <p (click)="decrementDelights()">{{arrDelights[nextIndexDelights]}}</p>
+            <div class="arrow" (click)="decrementDelights()">
+              <span><i class="fas fa-chevron-up"></i></span>
+            </div>
           </div>
         </div>
       </ng-template>
@@ -95,8 +144,15 @@
 
           </div>
           <div class="desc">
-            <h4>Premium</h4>
-            <p>Quality Meat</p>
+            <div class="arrow" (click)="incrementButchers()">
+              <span><i class="fas fa-chevron-down"></i></span>
+            </div>
+            <p (click)="incrementButchers()">{{arrButchers[prevIndexButchers]}}</p>
+            <h4>{{arrButchers[arrButchersActive]}}</h4>
+            <p (click)="decrementButchers()">{{arrButchers[nextIndexButchers]}}</p>
+            <div class="arrow" (click)="decrementButchers()">
+              <span><i class="fas fa-chevron-up"></i></span>
+            </div>
           </div>
         </div>
       </ng-template>
@@ -106,8 +162,15 @@
 
           </div>
           <div class="desc">
-            <h4>Daily</h4>
-            <p>Fresh Seafood</p>
+            <div class="arrow" (click)="incrementSeaFood()">
+              <span><i class="fas fa-chevron-down"></i></span>
+            </div>
+            <p (click)="incrementSeaFood()">{{arrSeaFood[nextIndexSeaFood]}}</p>
+            <h4>{{arrSeaFood[arrSeaFoodActive]}}</h4>
+            <p (click)="decrementSeaFood()">{{arrSeaFood[nextIndexSeaFood]}}</p>
+            <div class="arrow" (click)="decrementSeaFood()">
+              <span><i class="fas fa-chevron-up"></i></span>
+            </div>
           </div>
         </div>
       </ng-template>
@@ -117,8 +180,15 @@
 
           </div>
           <div class="desc">
-            <h4>All-Natural</h4>
-            <p>Fresh Cheese</p>
+            <div class="arrow" (click)="incrementGrater()">
+              <span><i class="fas fa-chevron-down"></i></span>
+            </div>
+            <p (click)="incrementGrater()">{{arrGrater[prevIndexGrater]}}</p>
+            <h4>{{arrGrater[arrGraterActive]}}</h4>
+            <p (click)="decrementGrater()">{{arrGrater[nextIndexGrater]}}</p>
+            <div class="arrow" (click)="decrementGrater()">
+              <span><i class="fas fa-chevron-up"></i></span>
+            </div>
           </div>
         </div>
       </ng-template>
